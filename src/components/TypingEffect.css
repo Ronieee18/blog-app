@@ -1,0 +1,27 @@
+/* TypingEffect.css */
+.typing-text {
+    position: relative;
+  }
+  
+  .cursor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    animation: blink 0.75s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

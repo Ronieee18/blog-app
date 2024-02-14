@@ -1,0 +1,22 @@
+#root {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* margin-top: 2px; */
+  text-align: center;
+}
+
+.home{
+  margin: 40px;
+}
+ .home::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   opacity: .9.1;
+  background:url('https://img.freepik.com/free-vector/black-background-with-light-pattern-black-background_483537-4203.jpg'  ) center center/cover no-repeat fixed;
+  background-size: cover; 
+   
+}
