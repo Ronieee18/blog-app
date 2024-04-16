@@ -17,23 +17,25 @@ function Authlogin() {
     const dispatch=useDispatch()
     const navigate=useNavigate()
 
-    const login=async(data)=>{
-       try {
-        setError('')
-        const session=await authService.login(data)
-        if(session){
-            const userdata=await authService.getCurrent()
-            if(userdata){
-            dispatch(storeLogin(data))
-            navigate('/')
-            alert('login succesfully')
-            }   
+    const login = async (data) => {
+        try {
+            setError('');
+            const session = await authService.login(data);
+            console.log('Login response:', session); // Log the response
+            if (session) {
+                const userdata = await authService.getCurrent();
+                if (userdata) {
+                    dispatch(storeLogin(data));
+                    navigate('/');
+                    alert('Login successful');
+                }
+            }
+        } catch (error) {
+            console.error('Login error:', error); // Log the error
+            alert('Invalid password');
         }
-        
-       } catch (error) {    
-            alert('invalid password')
-       }
-    }
+    };
+    
   return (
     <div
     className='flex bg-black h-[500px] max-[600px]:ml-20  items-center justify-center w-full max-[600px]:mt-10 pt-7'
