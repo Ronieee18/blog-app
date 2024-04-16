@@ -1,5 +1,5 @@
 import React from 'react'
-import Authlogin from '../components/authlogin'
+import Authlogin from '../components/Authlogin.jsx'
 
 function Login() {
   return (

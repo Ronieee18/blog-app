@@ -100,4 +100,4 @@ function Authlogin() {
   )
 }
 
-export default Authlogin
+export default Authlogin;
