@@ -22,48 +22,48 @@ const router=createBrowserRouter([
         path:'/',
         element:<Home/>
       },
-      {
-        path:'/login',
-        element:(
-          <Authlayout authentication={false} >
-            <Login/>
-          </Authlayout>
-        )
+      // {
+      //   path:'/login',
+      //   element:(
+      //     <Authlayout authentication={false} >
+      //       <Login/>
+      //     </Authlayout>
+      //   )
 
-      },
-      {
-        path:'/signup',
-        element:(
-          <Authlayout authentication={false}>
-            <Signup/>
-          </Authlayout>
-        )
-      },
+      // },
+      // {
+      //   path:'/signup',
+      //   element:(
+      //     <Authlayout authentication={false}>
+      //       <Signup/>
+      //     </Authlayout>
+      //   )
+      // },
       {
         path: "/all-posts",
         element: (
-            <Authlayout  authentication>
-                {" "}
+            // <Authlayout >
+            //     {" "}
                 <AllPosts />
-            </Authlayout>
+            // </Authlayout>
         ),
     },
     {
         path: "/add-post",
         element: (
-            <Authlayout authentication >
-                {" "}
+            // <Authlayout authentication >
+            //     {" "}
                 <Edit />
-            </Authlayout>
+            // </Authlayout>
         ),
     },
     {
         path: "/edit-post/:slug",
         element: (
-            <Authlayout authentication >
-                {" "}
+            // <Authlayout authentication >
+            //     {" "}
                 <EditPost />
-            </Authlayout>
+            // </Authlayout>
         ),
     },
     {

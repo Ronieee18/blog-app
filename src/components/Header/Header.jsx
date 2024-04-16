@@ -15,26 +15,26 @@ function Header() {
       slug: '/',
       active: true,
     },
-    {
-      name: 'Login',
-      slug: '/login',
-      active: !authStatus,
-    },
-    {
-      name: 'Sign up',
-      slug: '/signup',
-      active: !authStatus,
-    },
+    // {
+    //   name: 'Login',
+    //   slug: '/login',
+    //   active: !authStatus,
+    // },
+    // {
+    //   name: 'Sign up',
+    //   slug: '/signup',
+    //   active: !authStatus,
+    // },
 
     {
       name: 'allposts',
       slug: '/all-posts',
-      active: authStatus,
+      active: true,
     },
     {
       name: 'addpost',
       slug: '/add-post',
-      active: authStatus,
+      active: true,
     },
   ];
 
@@ -89,11 +89,11 @@ function Header() {
               )
           )}
 
-          {authStatus && (
+          {/* {authStatus && (
             <li>
               <LogoutBtn />
             </li>
-          )}
+          )} */}
         </ul>
         </div>
       </nav>
