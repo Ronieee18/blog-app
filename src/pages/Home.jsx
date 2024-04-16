@@ -33,8 +33,8 @@ function Home() {
                 <h3 className='text-center font-mono   '><u></u></h3>
                 <h1 className=' tracking-wider text-center w-[300px] m-auto	 text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laboriosam est facilis? Alias consequuntur</h1>
                 </div>
-            { !authStatus && <button onClick={()=>{navigate('/login')}} className='border-white border-2 bg-inherit w-52 text-xl font-mono tracking-wider p-2 m-4 hover:bg-white hover:text-black'>Login</button>
-                }
+            {/* { !authStatus && <button onClick={()=>{navigate('/login')}} className='border-white border-2 bg-inherit w-52 text-xl font-mono tracking-wider p-2 m-4 hover:bg-white hover:text-black'>Login</button>
+                } */}
 
 
             </div>
